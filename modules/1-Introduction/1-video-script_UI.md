@@ -37,9 +37,11 @@ As IP addressing is hierarchical, in NetBox you can model everything starting fr
 
 This just scratches the surface of the IPAM section of the database but we will return to it in later modules of this course.
 
-Next up we have a great example of how new features are being added into NetBox all the time. Added to NetBox in Version 3.3.0 was the ability to model your L2VPN and overlay networks, such as VXLAN and EVPN. They can be defined in NetBox and tied to interfaces and VLANs. This allows for easy tracking of overlay assets and their relationships with underlay resources.
+Next up we have a great example of how new features are being added into NetBox all the time. Added to NetBox in Version 3.7.0 was the ability to model VPN Tunnels, which was added to the existing modelling of L2VPN and overlay networks, such as VXLAN and EVPN. They can be defined in NetBox and tied to interface and ip addresses. This allows for easy tracking of both vpn and overlay assets and their relationships with underlay resources.
 
-Each L2VPN instance has a type and optional unique identifier. Like VRFs, L2VPNs can also have import and export route targets assigned to them. Terminations can then be created to assign VLANs and/or device and virtual machine interfaces to the overlay. 
+Each VPN Tunnel instance has a tunnel group, encapsulation type, and IPSec profile and terminations for that tunnel, alongside many other common fields.
+
+For L2VPN, each instance has a type and optional unique identifier. Like VRFs, L2VPNs can also have import and export route targets assigned to them. Terminations can then be created to assign VLANs and/or device and virtual machine interfaces to the overlay. 
 
 Under Virtualization, NetBox can model your virtual machines, starting with defining your cluster types such as VMware or other well known cloud platforms, then creating your clusters, and then adding your actual VM's - where you can define all the data that you can with a network device such as interfaces and device role, but you can also define things like resources such as CPU and memory
 
