@@ -82,21 +82,29 @@ In the operations menu, you'll find sections related to the operation of NetBox,
 
  Event Rules can be configured to fire on a configurable event, such as a device creation or deletion and subsequently call a script or webhook. 
 
- Webhooks are callouts via http or https to 3rd party systems.  For example, you may configure an event rule for device creation which triggers a webhook to update an asset system via its api.
+ Webhooks are callouts via http or https to 3rd party systems.  For example, you may configure an event rule for device creation which triggers a webhook to update an asset system via its api, or for example call an external automation engine to create a vlan. 
 
  Jobs are the environment behind execution of tasks within NetBox, such as custom scripts or data source syncrhonisation. 
 
  Finally, we have logging options, which include notifications, journal entries and the changelog.  Notifications are used for notifying users or user groups of changes within NetBox, Journal Entries for manually entered notes and the Changelog, which details changes to the majority of objects within the NetBox Database.
 
-So, the last section of the left hand menu bar under the heading of Other is where you can find a whole host of other incredibly useful information and features - such as logging to tell you who updated that IP range recently, thru custom fields that allow you to extend the data model to suit your own environment, and custom links to external applications. You can add in integrations such as web hooks to trigger certain actions - for example to make a call to an external automation engine to automatically provision a new vlan when it has been added to the NetBox database! You can also create reports and add custom scripts to extend the functionality of NetBox even further - the possibilities are literally endless!
+The last section of the left hand menu bar is Admin, which is primarily for administration tasks, such as user, group and API token management alongside permissions. 
+
+A new object within NetBox 4.5 is ownership, which reflects operational owner of any given objects. For example, there may be a circuit within NetBox assigned to a customer tenant, however the circuit is maintain by an internal operations team.
+
+(click plugins, then bgp)
+Two features to highlight here are Plugins and Configuration History.  Plugins is a catalogue showing plugins installed and available for installation within NetBox and is curated by NetBox Labs.  Clicking on a plugin shows details of the plugin, relevant versions and links plus an installation guide.
+
+(click configuration history)
+The Configuration history option allows you to create Configuration Revisions and apply various changes to the NetBox such as banners and validators and without reloading the underlying NetBox instance.
 
 So that's a super quick overview of the Web interface, and if we go back to the main home page, you can also access the same options via the main body of the page. 
 (click sites, then go back) 
 plus you have a view of the change log which is incredibly useful to have right on the home page. 
 
-There is a search bar at the top that allows you to search for any object in the the NetBox database, and you can either search within all objects or you can be more specific and filter for only the object type you need, for example  if you wanted to find all of your circuits provided by Level 3, you select 'providers, enter level 3 and this will return the level 3 provider and we can see that there are 13 circuits with Level 3, and if we click on the link it will take us to a list of those circuit objects. 
+There is a search bar at the top that allows you to search for any object in the the NetBox database
 
-As you can see clicking on any hyperlink will take you to the related objects, for example if you click on the first circuit returned in the list, it displays all the related information for that circuit - for example the type of circuit, in this case it's MPLS and the status is Active you can see the circuit termination details on the right hand side. 
+As you can see clicking on any result hyperlink will take you to the related objects.
 
 Also, right down at the footer of the page, are handy links to the official documentation, the REST and GraphQL API documentation, the source code and the community Slack channel.  And lastly, if all this wasn't enough, you can even switch the UI to Dark Mode! 
 
