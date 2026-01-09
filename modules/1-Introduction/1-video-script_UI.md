@@ -49,6 +49,8 @@ Circuits is where you store all the information relating to your providers and c
 (click on a provider and then a circuit) 
 well those days are over as NetBox stores all the relevant information and makes it incredibly easy to find!
 
+NetBox 4.2.0 also introduced Virtual Circuit functionality, enabling you to accurately reflect point-to-point or multipoint virtual circuits atop infrastructure comprising physical circuits and cables
+
 Another great feature of NetBox is the ability to track your power feeds and power panels - again as with all the data stored in NetBox it is super easy to track and find exactly the data you need with the intuitive User Interface. 
 
 So, the last section of the left hand menu bar under the heading of Other is where you can find a whole host of other incredibly useful information and features - such as logging to tell you who updated that IP range recently, thru custom fields that allow you to extend the data model to suit your own environment, and custom links to external applications. You can add in integrations such as web hooks to trigger certain actions - for example to make a call to an external automation engine to automatically provision a new vlan when it has been added to the NetBox database! You can also create reports and add custom scripts to extend the functionality of NetBox even further - the possibilities are literally endless!
