@@ -10,14 +10,14 @@ Moving down the menu. you have Devices. NetBox uses device types to represent un
 
 With the devices data model (and other data models in NetBox) there are dependencies  - and devices always have to have a manufacturer, a role, and a device type - so if I click on Manufacturers, then Cisco for example you can see the Device types set up for Cisco in this demo instance, and then we can drill down further, for example into the C9200-48P device type, and there are a number of instances of this particular device type. 
 
-The device type is essentially a template that models the device and you can see this device type has a template for the standard interfaces including 48 gigabit ethernet ports, a management interface, and stacking ports. Once component templates have been created, every new device that you create as an instance of this device type will automatically be assigned each of the components listed here.
+The device type is essentially a template that models the device and you can see this device type has a template for the standard interfaces including 48 gigabit ethernet ports, a management interface, and stacking ports. Once component templates have been created, every new device that you create as an instance of this device type will automatically be assigned each of the components listed here, however it's important to note however that updates to device type templates will not reflect into already created devices once created. 
 
 So if we go back to the device type and instances, and click on the name of the first instance of this device type we can take a look at the details we have stored for it for example the region, site and the rack. Over on the right hand side in the management panel we can see that device role is an Access Switch, and if we had a primary IPv4 or v6 IP addresses configured they would also be visible here.  
 
 Click on the interfaces tab to see details of all the configured interfaces on the device.  As this device has some defined cables and connections to other devices already, we can even bring up a visual of the cable trace for interface GigabitEthernet1/0/1 which connects directly to a router in the same Communications closet. 
 
 (click back on device types)
-Worth pointing out here is that While users are always free to create their own device types in NetBox, many find it convenient to draw from our community library of pre-defined device types. This is possible because a particular make and model of device is applicable universally and never changes. These are freely available on GitHub in the netbox community project and you can find the link in the course page for this video. (https://github.com/netbox-community/devicetype-library) 
+Worth pointing out here is that While users are always free to create their own device types in NetBox, many find it convenient to draw from our community library of pre-defined device types. This is possible because a particular make and model of device is applicable universally and never changes. These are freely available on GitHub in the netbox community project and you can find the link in the course page for this video. (https://github.com/netbox-community/devicetype-library). 
 
 In a later module you will learnt how to import some device types using this community library. 
 
