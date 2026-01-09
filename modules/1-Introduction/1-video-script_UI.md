@@ -74,6 +74,20 @@ Also within this section are export templates, used to transform data being expo
 
 Custom Scripts allow you write your own scripts using the entire NetBox data model, for example, to ensure business logic such as naming is adhered to when creating vlans, or ensuring secondary objects are created. we'll cover this in a later section.
 
+(click Operations)
+
+In the operations menu, you'll find sections related to the operation of NetBox, in terms of both interacting with other systems as well as internall.
+
+ Data Sources can be used to configured 3d party data sources such as git to synchronise various externally hosted files to use within components with NetBox. This includes items such as templates and custom scripts.
+
+ Event Rules can be configured to fire on a configurable event, such as a device creation or deletion and subsequently call a script or webhook. 
+
+ Webhooks are callouts via http or https to 3rd party systems.  For example, you may configure an event rule for device creation which triggers a webhook to update an asset system via its api.
+
+ Jobs are the environment behind execution of tasks within NetBox, such as custom scripts or data source syncrhonisation. 
+
+ Finally, we have logging options, which include notifications, journal entries and the changelog.  Notifications are used for notifying users or user groups of changes within NetBox, Journal Entries for manually entered notes and the Changelog, which details changes to the majority of objects within the NetBox Database.
+
 So, the last section of the left hand menu bar under the heading of Other is where you can find a whole host of other incredibly useful information and features - such as logging to tell you who updated that IP range recently, thru custom fields that allow you to extend the data model to suit your own environment, and custom links to external applications. You can add in integrations such as web hooks to trigger certain actions - for example to make a call to an external automation engine to automatically provision a new vlan when it has been added to the NetBox database! You can also create reports and add custom scripts to extend the functionality of NetBox even further - the possibilities are literally endless!
 
 So that's a super quick overview of the Web interface, and if we go back to the main home page, you can also access the same options via the main body of the page. 
