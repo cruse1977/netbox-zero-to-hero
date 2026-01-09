@@ -67,6 +67,13 @@ If we click on the devices referenced by the template, then a specific device, w
 
 These two features, alongside the NetBox data model allow for both partial and complete configuration files to be generated within NetBox itself.
 
+(click customization)
+The customization menu is where you'll find a whole host of features to allow you customise your NetBox experience. This ranges from Custom Fields, that allow you extend the NetBox data model to suit your own environent, alongside Custom Links, which allow to create links to your own environment using NetBox Data within both objects and object list tables. 
+
+Also within this section are export templates, used to transform data being exported from NetBox, Tags, Image attachments amd finally one of the most power features of NetBox - Custom Scripts.
+
+Custom Scripts allow you write your own scripts using the entire NetBox data model, for example, to ensure business logic such as naming is adhered to when creating vlans, or ensuring secondary objects are created. we'll cover this in a later section.
+
 So, the last section of the left hand menu bar under the heading of Other is where you can find a whole host of other incredibly useful information and features - such as logging to tell you who updated that IP range recently, thru custom fields that allow you to extend the data model to suit your own environment, and custom links to external applications. You can add in integrations such as web hooks to trigger certain actions - for example to make a call to an external automation engine to automatically provision a new vlan when it has been added to the NetBox database! You can also create reports and add custom scripts to extend the functionality of NetBox even further - the possibilities are literally endless!
 
 So that's a super quick overview of the Web interface, and if we go back to the main home page, you can also access the same options via the main body of the page. 
