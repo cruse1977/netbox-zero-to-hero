@@ -8,7 +8,7 @@ Once logged in, you are presented with a menu system on the left had side of the
 
 Moving down the menu. you have Devices. NetBox uses device types to represent unique real-world device models. This allows a user to define a device type and all its components once, and easily replicate an unlimited number of device instances from it.
 
-With the devices data model (and other data models in NetBox) there are dependencies  - and devices always have to have a manufacturer, and a device type - so if I click on Manufacturers, then Cisco for example you can see the Device types set up for Cisco in this demo instance, and then we can drill down further, for example into the C9200-48P device type, and there are a number of instances of this particular device type. 
+With the devices data model (and other data models in NetBox) there are dependencies  - and devices always have to have a manufacturer, a role, and a device type - so if I click on Manufacturers, then Cisco for example you can see the Device types set up for Cisco in this demo instance, and then we can drill down further, for example into the C9200-48P device type, and there are a number of instances of this particular device type. 
 
 The device type is essentially a template that models the device and you can see this device type has a template for the standard interfaces including 48 gigabit ethernet ports, a management interface, and stacking ports. Once component templates have been created, every new device that you create as an instance of this device type will automatically be assigned each of the components listed here.
 
